@@ -30,7 +30,6 @@ jobs:
     - name: Run Unit Tests and generate coverage report
       run: |
         cd GET
-        pytest
         pytest --html=report.html
     - name: Archive package
       uses: actions/upload-artifact@v2
