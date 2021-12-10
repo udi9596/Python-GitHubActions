@@ -32,6 +32,11 @@ jobs:
         cd GET
         pytest
         pytest --html=report.html
+    - name: Archive package
+      uses: actions/upload-artifact@v2
+      with:
+        name: PyTestReport
+        path: Reports/
     
   
 
