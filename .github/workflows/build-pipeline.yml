@@ -34,13 +34,8 @@ jobs:
     - name: Archive html report
       uses: actions/upload-artifact@v2
       with:
-        name: code-coverage-report
+        name: report
         path: GET/
-    - name: Run package creation
-      run: |
-          cd GET
-          python -m pip install --user --upgrade build
-          python -m build
     - name: Archive package
       uses: actions/upload-artifact@v2
       with:
